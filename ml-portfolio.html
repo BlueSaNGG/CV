@@ -114,6 +114,13 @@
       font-weight: 600;
     }
     
+    section h4 {
+      color: #1a1a2e;
+      font-size: 1.05em;
+      margin: 20px 0 8px;
+      font-weight: 600;
+    }
+    
     p {
       margin: 12px 0;
       color: #555;
@@ -140,6 +147,36 @@
       color: #1a1a2e;
       margin-bottom: 8px;
       font-weight: 600;
+    }
+    
+    .experience-item {
+      margin: 25px 0;
+    }
+    
+    .experience-item h4 {
+      color: #1a1a2e;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    
+    .experience-item .company {
+      color: #e94560;
+      font-weight: 600;
+    }
+    
+    .experience-item .period {
+      color: #888;
+      font-size: 0.9em;
+      margin-bottom: 12px;
+    }
+    
+    .experience-item ul {
+      margin-top: 8px;
+    }
+    
+    .experience-item li {
+      font-size: 0.95em;
+      margin: 6px 0;
     }
     
     .artifact-section {
@@ -217,6 +254,7 @@
     <nav>
       <a href="#bio">Bio</a>
       <a href="#value">Value Proposition</a>
+      <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#artifact">Artifacts</a>
       <a href="#references">References</a>
@@ -240,9 +278,61 @@
         </div>
       </section>
       
+      <section id="education">
+        <h2>Education</h2>
+        
+        <div class="experience-item">
+          <h4>University of Illinois Urbana-Champaign</h4>
+          <p class="company">M.S. in Biological and Computer Engineering</p>
+          <p class="period">Jan. 2021 – Dec. 2022 | Champaign, IL</p>
+          <p><em>Relevant coursework:</em> Database Systems, Parallel Computer Architecture, Applied Parallel Programming, Artificial Intelligence, Programming Languages & Compilers, System Programming, Topics in Software Engineering.</p>
+        </div>
+        
+        <div class="experience-item">
+          <h4>Zhejiang University</h4>
+          <p class="company">B.S. in Biological Engineering</p>
+          <p class="period">Sep. 2016 – Jun. 2020 | Zhejiang, China</p>
+          <p><em>Relevant coursework:</em> Data Structures and Algorithms, Computer System Organization, Game Development, Statistics and Probability, Numerical Analysis.</p>
+        </div>
+      </section>
+      
       <section id="experience">
         <h2>Experience</h2>
-        <p><em>[Add your work experience here - will appear similar to other student portfolios]</em></p>
+        
+        <div class="experience-item">
+          <h4>Software Engineer</h4>
+          <p class="company">PayPal</p>
+          <p class="period">Feb. 2023 – Present | Chicago, IL</p>
+          <ul>
+            <li>Maintained and optimized CI infrastructure, ensuring seamless job execution and stability for iOS and Android platforms. Implemented monitoring and alerting systems, leading to a 15% reduction in downtime.</li>
+            <li>Created a CI process to streamline pull request (PR) reviews by scanning for pod version differences and gathering commit changes, reducing review workload by 50%.</li>
+            <li>Managed and updated 371 release-publish jobs, ensuring stability and introducing new features.</li>
+            <li>Standardized Android test cases across module teams, ensuring consistency and reliability in testing practices.</li>
+            <li>Developed a mock framework for Android test cases, reducing test execution time by 80%.</li>
+            <li>Integrated Azure AI to generate TestRail test cases from test code, reducing time spent creating test cases by 50%.</li>
+          </ul>
+        </div>
+        
+        <div class="experience-item">
+          <h4>Software Engineer Intern</h4>
+          <p class="company">Venmo</p>
+          <p class="period">May. 2022 – Aug. 2022 | San Jose, CA</p>
+          <ul>
+            <li>Enhanced CI pipelines by correcting coding errors, improving CI speed and test accuracy. Reduced build times by 20%.</li>
+            <li>Built automated end-to-end Android UI and API tests, improving app robustness and reducing user-reported bugs by 25%.</li>
+            <li>Deployed tests on AWS Device Farm to automate and record tests across various devices.</li>
+          </ul>
+        </div>
+        
+        <div class="experience-item">
+          <h4>iOS Software Engineer Intern</h4>
+          <p class="company">NetEase</p>
+          <p class="period">May. 2021 – Aug. 2021 | Zhejiang, China</p>
+          <ul>
+            <li>Developed boosts UI with object-oriented Objective-C code, resulting in a 20% increase in customer frequency.</li>
+            <li>Organized code into MVC format to make it more extensible and maintainable, reducing development time by 30%.</li>
+          </ul>
+        </div>
       </section>
       
       <section id="artifact">
