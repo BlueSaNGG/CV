@@ -1,78 +1,344 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>ML Portfolio - QI JIN</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ML Portfolio - QI JIN | Indiana Wesleyan University</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 50px 40px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    header .subtitle {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+    
+    header .tagline {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 0.9em;
+    }
+    
+    nav {
+      background: #f8f9fa;
+      padding: 15px 40px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    
+    nav a {
+      color: #1e3c72;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: #667eea;
+    }
+    
+    .content {
+      padding: 40px;
+    }
+    
+    section {
+      margin-bottom: 40px;
+    }
+    
+    section h2 {
+      color: #1e3c72;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #667eea;
+      display: inline-block;
+    }
+    
+    section h3 {
+      color: #2a5298;
+      font-size: 1.3em;
+      margin: 25px 0 15px;
+    }
+    
+    .card {
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      padding: 20px 25px;
+      margin: 20px 0;
+      border-radius: 0 10px 10px 0;
+    }
+    
+    .card h4 {
+      color: #1e3c72;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    
+    ul {
+      margin-left: 25px;
+    }
+    
+    li {
+      margin: 10px 0;
+      line-height: 1.8;
+    }
+    
+    .value-prop {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin: 25px 0;
+    }
+    
+    .value-prop h3 {
+      color: white;
+      margin-bottom: 15px;
+    }
+    
+    .value-prop p {
+      opacity: 0.95;
+      line-height: 1.8;
+    }
+    
+    .highlight-box {
+      background: #e8f4fd;
+      border: 2px solid #667eea;
+      border-radius: 15px;
+      padding: 25px;
+      margin: 20px 0;
+    }
+    
+    .highlight-box h4 {
+      color: #1e3c72;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+    
+    .reference-list {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 15px;
+    }
+    
+    .reference-list li {
+      font-size: 0.9em;
+      margin: 12px 0;
+      padding-left: 10px;
+      border-left: 2px solid #ddd;
+    }
+    
+    .reference-list em {
+      color: #2a5298;
+    }
+    
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    
+    footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: white;
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        padding: 30px 20px;
+      }
+      
+      header h1 {
+        font-size: 1.8em;
+      }
+      
+      .content {
+        padding: 20px;
+      }
+      
+      nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Machine Learning Portfolio - Artifact 1</h1>
-  <p><em>Indiana Wesleyan University - 3WI2026 Machine Learning Fundamentals</em></p>
-  <hr>
-  
-  <h2>Professional Bio</h2>
-  <p>I am a developing professional with strong interests in communication, adaptability, and the responsible use of AI and machine learning. Through coursework and work experience, I have become increasingly interested in how technical knowledge and people-centered leadership must work together in order for change to be successful.</p>
-  
-  <h2>Value Proposition and Audience</h2>
-  <p><strong>Personal Value Proposition:</strong> I bring a reflective, adaptable, and communication-focused approach to learning and leadership in AI/ML-related settings.</p>
-  <p><strong>Target Audience:</strong> Future employer, mentor, or academic reviewer who wants to see not only completed work, but also evidence of self-awareness, growth, and readiness for continued development.</p>
-  
-  <hr>
-  <h2>Artifact 1 with Artifact Information</h2>
-  
-  <h3>Artifact Title</h3>
-  <p>Leadership Growth in AI/ML and Change Management</p>
-  
-  <h3>Introduction</h3>
-  <p>This artifact was developed from my Workshop One professional assessment work. It presents my reflection on two self-assessments focused on AI/ML leadership and change management. I selected it as my first portfolio artifact because it provides a strong starting point for showing who I am as a learner and emerging professional.</p>
-  
-  <h3>Artifact Description</h3>
-  <ul>
-    <li><strong>Objective:</strong> To evaluate my current strengths and growth areas related to AI/ML leadership and change management.</li>
-    <li><strong>Process:</strong> I completed both self-assessments, reviewed my results, compared common themes across the tools, and wrote a reflection identifying strengths, growth areas, and possible revisions to the assessments.</li>
-    <li><strong>Tools and Technologies Used:</strong> Course-provided self-assessment forms, workshop readings, and written reflection.</li>
-  </ul>
-  
-  <h3>Artifact-Specific Value Proposition</h3>
-  <ul>
-    <li><strong>Unique Value:</strong> This artifact shows self-awareness, communication strength, openness to innovation, and a willingness to improve through structured reflection.</li>
-    <li><strong>Relevance:</strong> It aligns with my broader value proposition by showing that I approach AI/ML not only as a technical field, but also as one that requires responsible leadership and thoughtful communication.</li>
-  </ul>
-  
-  <h3>Customization for Audience</h3>
-  <ul>
-    <li><strong>Adaptations Made:</strong> I organized the artifact around professional growth, leadership readiness, and audience relevance instead of presenting it only as a classroom exercise.</li>
-    <li><strong>Relevance:</strong> These choices make the artifact more meaningful to a professional reader who wants to understand my mindset, development, and potential.</li>
-  </ul>
-  
-  <h3>Reflection</h3>
-  <ul>
-    <li><strong>Significance:</strong> I chose this artifact because it demonstrates how I assess myself honestly and connect learning to future professional growth.</li>
-    <li><strong>Lessons Learned:</strong> I learned that communication and adaptability are clear strengths for me, but I also need stronger experience in areas such as risk management, scaling AI/ML initiatives, and applying formal leadership frameworks.</li>
-  </ul>
-  
-  <h3>Feedback and Revisions</h3>
-  <ul>
-    <li><strong>Feedback:</strong> After reviewing the rubric and professional portfolio template, I recognized that the artifact needed stronger audience focus, clearer value-proposition language, and a more professional structure. The template review helped me understand what makes an artifact suitable for a professional portfolio.</li>
-    <li><strong>Revisions:</strong> I clarified the artifact title, expanded the explanation of audience and relevance, organized the content according to the required template sections, and strengthened the explanation of why this artifact belongs in a professional portfolio. I also ensured all sections from the template were included with sufficient detail.</li>
-  </ul>
-  
-  <h3>References</h3>
-  <ul>
-    <li>Indiana Wesleyan University. (2026). <em>Professional Portfolio Artifact Template</em>.</li>
-    <li>Indiana Wesleyan University. (2026). <em>Workshop One: Professional Portfolio - Artifact 1 assignment materials</em>.</li>
-    <li>Indiana Wesleyan University. (2026). <em>AI/ML Integration Leadership Skills Self-Assessment Form</em>.</li>
-    <li>Indiana Wesleyan University. (2026). <em>Change Management Skills Self-Assessment Form</em>.</li>
-    <li>Center for Creative Leadership. (n.d.). <em>How to be a successful change leader</em>. https://www.ccl.org/articles/leading-effectively-articles/successful-change-leader/</li>
-    <li>Change Strategists. (n.d.). <em>How to assess change management skills</em>. https://changestrategists.com/how-to-assess-change-management-skills/</li>
-    <li>Cleveland Clinic. (2022). <em>Neuroplasticity: What it is, purpose, examples & how to improve it</em>. https://my.clevelandclinic.org/health/articles/22857-neuroplasticity</li>
-  </ul>
-  
-  <hr>
-  <a href="index.html">← Back to Main Portfolio</a>
-  <br>
-  <a href="https://github.com/BlueSaNGG" target="_blank">GitHub</a>
+  <div class="container">
+    <header>
+      <h1>🤖 Machine Learning Portfolio</h1>
+      <p class="subtitle">Artifact 1 | Indiana Wesleyan University</p>
+      <p class="subtitle">3WI2026 Machine Learning Fundamentals</p>
+      <span class="tagline">QI JIN</span>
+    </header>
+    
+    <nav>
+      <div class="nav-links">
+        <a href="#bio">Bio</a>
+        <a href="#value">Value</a>
+        <a href="#artifact">Artifact</a>
+        <a href="#reflection">Reflection</a>
+        <a href="#references">References</a>
+      </div>
+      <a href="index.html">← Main Portfolio</a>
+    </nav>
+    
+    <div class="content">
+      <section id="bio">
+        <h2>👤 Professional Bio</h2>
+        <p>I am a developing professional with strong interests in <strong>communication</strong>, <strong>adaptability</strong>, and the <strong>responsible use of AI and machine learning</strong>. Through coursework and work experience, I have become increasingly interested in how technical knowledge and people-centered leadership must work together in order for change to be successful.</p>
+      </section>
+      
+      <section id="value">
+        <h2>💎 Value Proposition and Audience</h2>
+        <div class="value-prop">
+          <h3>My Value Proposition</h3>
+          <p>I bring a <strong>reflective, adaptable, and communication-focused</strong> approach to learning and leadership in AI/ML-related settings. I believe that successful AI/ML work requires not only technical skills but also judgment, responsibility, and the ability to guide people through change.</p>
+        </div>
+        <div class="card">
+          <h4>🎯 Target Audience</h4>
+          <p>Future employer, mentor, or academic reviewer who wants to see not only completed work, but also evidence of <strong>self-awareness, growth, and readiness</strong> for continued development.</p>
+        </div>
+      </section>
+      
+      <section id="artifact">
+        <h2>📦 Artifact 1: Professional Assessment</h2>
+        
+        <div class="highlight-box">
+          <h4>📌 Artifact Title</h4>
+          <p><strong>Leadership Growth in AI/ML and Change Management</strong></p>
+        </div>
+        
+        <h3>Introduction</h3>
+        <p>This artifact was developed from my Workshop One professional assessment work. It presents my reflection on two self-assessments focused on AI/ML leadership and change management. I selected it as my first portfolio artifact because it provides a strong starting point for showing who I am as a learner and emerging professional.</p>
+        
+        <h3>Artifact Description</h3>
+        <div class="card">
+          <h4>🎯 Objective</h4>
+          <p>To evaluate my current strengths and growth areas related to AI/ML leadership and change management.</p>
+        </div>
+        <div class="card">
+          <h4>⚙️ Process</h4>
+          <p>I completed both self-assessments, reviewed my results, compared common themes across the tools, and wrote a reflection identifying strengths, growth areas, and possible revisions to the assessments.</p>
+        </div>
+        <div class="card">
+          <h4>🛠️ Tools and Technologies Used</h4>
+          <p>Course-provided self-assessment forms, workshop readings, and written reflection.</p>
+        </div>
+        
+        <h3>Artifact-Specific Value Proposition</h3>
+        <ul>
+          <li><strong>Unique Value:</strong> This artifact shows self-awareness, communication strength, openness to innovation, and a willingness to improve through structured reflection.</li>
+          <li><strong>Relevance:</strong> It aligns with my broader value proposition by showing that I approach AI/ML not only as a technical field, but also as one that requires responsible leadership and thoughtful communication.</li>
+        </ul>
+        
+        <h3>Customization for Audience</h3>
+        <ul>
+          <li><strong>Adaptations Made:</strong> I organized the artifact around professional growth, leadership readiness, and audience relevance instead of presenting it only as a classroom exercise.</li>
+          <li><strong>Relevance:</strong> These choices make the artifact more meaningful to a professional reader who wants to understand my mindset, development, and potential.</li>
+        </ul>
+      </section>
+      
+      <section id="reflection">
+        <h2>💭 Reflection</h2>
+        <div class="card">
+          <h4>✨ Significance</h4>
+          <p>I chose this artifact because it demonstrates how I assess myself honestly and connect learning to future professional growth.</p>
+        </div>
+        <div class="card">
+          <h4>📚 Lessons Learned</h4>
+          <p>I learned that <strong>communication and adaptability</strong> are clear strengths for me, but I also need stronger experience in areas such as risk management, scaling AI/ML initiatives, and applying formal leadership frameworks.</p>
+        </div>
+        
+        <h3>Feedback and Revisions</h3>
+        <div class="card">
+          <h4>📝 Feedback</h4>
+          <p>After reviewing the rubric and professional portfolio template, I recognized that the artifact needed stronger audience focus, clearer value-proposition language, and a more professional structure.</p>
+        </div>
+        <div class="card">
+          <h4>✅ Revisions</h4>
+          <p>I clarified the artifact title, expanded the explanation of audience and relevance, organized the content according to the required template sections, and strengthened the explanation of why this artifact belongs in a professional portfolio.</p>
+        </div>
+      </section>
+      
+      <section id="references">
+        <h2>📚 References</h2>
+        <ul class="reference-list">
+          <li>Indiana Wesleyan University. (2026). <em>Professional Portfolio Artifact Template</em>.</li>
+          <li>Indiana Wesleyan University. (2026). <em>Workshop One: Professional Portfolio - Artifact 1 assignment materials</em>.</li>
+          <li>Indiana Wesleyan University. (2026). <em>AI/ML Integration Leadership Skills Self-Assessment Form</em>.</li>
+          <li>Indiana Wesleyan University. (2026). <em>Change Management Skills Self-Assessment Form</em>.</li>
+          <li>Center for Creative Leadership. (n.d.). <em>How to be a successful change leader</em>. <a href="https://www.ccl.org/articles/leading-effectively-articles/successful-change-leader/" target="_blank">https://www.ccl.org/articles/leading-effectively-articles/successful-change-leader/</a></li>
+          <li>Change Strategists. (n.d.). <em>How to assess change management skills</em>. <a href="https://changestrategists.com/how-to-assess-change-management-skills/" target="_blank">https://changestrategists.com/how-to-assess-change-management-skills/</a></li>
+          <li>Cleveland Clinic. (2022). <em>Neuroplasticity: What it is, purpose, examples & how to improve it</em>. <a href="https://my.clevelandclinic.org/health/articles/22857-neuroplasticity" target="_blank">https://my.clevelandclinic.org/health/articles/22857-neuroplasticity</a></li>
+        </ul>
+      </section>
+    </div>
+    
+    <footer>
+      <p>🔗 <a href="https://github.com/BlueSaNGG" target="_blank">GitHub</a> | <a href="https://bluesangg.github.io/CV/" target="_blank">Main Portfolio</a></p>
+      <a href="index.html" class="back-link">← Back to Main Portfolio</a>
+    </footer>
+  </div>
 </body>
 
 </html>
