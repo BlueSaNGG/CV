@@ -6,38 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QI JIN - Professional Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.7;
       color: #333;
       background-color: #f5f5f5;
     }
-    
     .container {
       max-width: 1100px;
       margin: 0 auto;
       background: white;
       box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     }
-    
     header {
       background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
       color: white;
       padding: 50px;
     }
-    
     .header-content {
       display: flex;
       align-items: center;
       gap: 35px;
     }
-    
     .profile-photo {
       width: 180px;
       height: 180px;
@@ -50,20 +41,19 @@
       color: #666;
       font-size: 0.9em;
       flex-shrink: 0;
+      text-align: center;
+      padding: 16px;
     }
-    
     .header-text h1 {
       font-size: 2.4em;
       margin-bottom: 8px;
       font-weight: 600;
     }
-    
     .header-text .title {
       font-size: 1.1em;
       opacity: 0.9;
       margin-bottom: 15px;
     }
-    
     .header-text .tagline {
       display: inline-block;
       background: rgba(255,255,255,0.15);
@@ -71,13 +61,11 @@
       border-radius: 15px;
       font-size: 0.85em;
     }
-    
     nav {
       background: #fff;
       padding: 15px 50px;
       border-bottom: 1px solid #eee;
     }
-    
     nav a {
       color: #1a1a2e;
       text-decoration: none;
@@ -85,19 +73,9 @@
       margin-right: 25px;
       transition: color 0.3s;
     }
-    
-    nav a:hover {
-      color: #e94560;
-    }
-    
-    .content {
-      padding: 45px 50px;
-    }
-    
-    section {
-      margin-bottom: 45px;
-    }
-    
+    nav a:hover { color: #e94560; }
+    .content { padding: 45px 50px; }
+    section { margin-bottom: 45px; }
     section h2 {
       color: #1a1a2e;
       font-size: 1.5em;
@@ -106,35 +84,21 @@
       border-bottom: 2px solid #e94560;
       display: inline-block;
     }
-    
     section h3 {
       color: #16213e;
       font-size: 1.15em;
       margin: 25px 0 12px;
       font-weight: 600;
     }
-    
     section h4 {
       color: #1a1a2e;
       font-size: 1.05em;
       margin: 20px 0 8px;
       font-weight: 600;
     }
-    
-    p {
-      margin: 12px 0;
-      color: #555;
-    }
-    
-    ul {
-      margin: 12px 0 12px 25px;
-    }
-    
-    li {
-      margin: 8px 0;
-      color: #555;
-    }
-    
+    p { margin: 12px 0; color: #555; }
+    ul { margin: 12px 0 12px 25px; }
+    li { margin: 8px 0; color: #555; }
     .card {
       background: #f8f9fa;
       padding: 22px 28px;
@@ -142,43 +106,26 @@
       border-radius: 8px;
       border-left: 4px solid #e94560;
     }
-    
-    .card h4 {
-      color: #1a1a2e;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    
-    .experience-item {
-      margin: 25px 0;
-    }
-    
+    .experience-item { margin: 25px 0; }
     .experience-item h4 {
       color: #1a1a2e;
       font-size: 1.1em;
       margin-bottom: 5px;
     }
-    
     .experience-item .company {
       color: #e94560;
       font-weight: 600;
     }
-    
     .experience-item .period {
       color: #888;
       font-size: 0.9em;
       margin-bottom: 12px;
     }
-    
-    .experience-item ul {
-      margin-top: 8px;
-    }
-    
+    .experience-item ul { margin-top: 8px; }
     .experience-item li {
       font-size: 0.95em;
       margin: 6px 0;
     }
-    
     .artifact-section {
       background: #fafafa;
       border: 1px solid #e0e0e0;
@@ -186,7 +133,6 @@
       padding: 30px;
       margin: 25px 0;
     }
-    
     .artifact-title {
       color: #e94560;
       font-size: 1.1em;
@@ -194,22 +140,16 @@
       margin-bottom: 15px;
       font-weight: 600;
     }
-    
     .reference-list {
       background: #f8f9fa;
       padding: 22px 28px;
       border-radius: 8px;
     }
-    
     .reference-list li {
       font-size: 0.9em;
       margin: 8px 0;
     }
-    
-    .reference-list em {
-      color: #16213e;
-    }
-    
+    .reference-list em { color: #16213e; }
     footer {
       background: #1a1a2e;
       color: rgba(255,255,255,0.6);
@@ -217,21 +157,10 @@
       padding: 25px;
       font-size: 0.9em;
     }
-    
-    footer a {
-      color: #e94560;
-      text-decoration: none;
-    }
-    
+    footer a { color: #e94560; text-decoration: none; }
     @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      header, nav, .content {
-        padding: 30px 20px;
-      }
+      .header-content { flex-direction: column; text-align: center; }
+      header, nav, .content { padding: 30px 20px; }
     }
   </style>
 </head>
@@ -240,9 +169,7 @@
   <div class="container">
     <header>
       <div class="header-content">
-        <div class="profile-photo">
-          [Your Photo Here]
-        </div>
+        <div class="profile-photo">[Your Photo Here]</div>
         <div class="header-text">
           <h1>QI JIN</h1>
           <p class="title">Machine Learning Fundamentals Portfolio | Indiana Wesleyan University</p>
@@ -250,7 +177,7 @@
         </div>
       </div>
     </header>
-    
+
     <nav>
       <a href="#bio">Bio</a>
       <a href="#value">Value Proposition</a>
@@ -259,13 +186,13 @@
       <a href="#artifact">Artifacts</a>
       <a href="#references">References</a>
     </nav>
-    
+
     <div class="content">
       <section id="bio">
         <h2>Professional Bio</h2>
         <p>I am a developing professional with strong interests in <strong>communication</strong>, <strong>adaptability</strong>, and the <strong>responsible use of AI and machine learning</strong>. Through coursework and work experience, I have become increasingly interested in how technical knowledge and people-centered leadership must work together in order for change to be successful.</p>
       </section>
-      
+
       <section id="value">
         <h2>Value Proposition and Audience</h2>
         <div class="card">
@@ -277,17 +204,17 @@
           <p>Future employer, mentor, or academic reviewer who wants to see not only completed work, but also evidence of <strong>self-awareness, growth, and readiness</strong> for continued development.</p>
         </div>
       </section>
-      
+
       <section id="education">
         <h2>Education</h2>
-        
+
         <div class="experience-item">
           <h4>University of Illinois Urbana-Champaign</h4>
           <p class="company">M.S. in Biological and Computer Engineering</p>
           <p class="period">Jan. 2021 – Dec. 2022 | Champaign, IL</p>
-          <p><em>Relevant coursework:</em> Database Systems, Parallel Computer Architecture, Applied Parallel Programming, Artificial Intelligence, Programming Languages & Compilers, System Programming, Topics in Software Engineering.</p>
+          <p><em>Relevant coursework:</em> Database Systems, Parallel Computer Architecture, Applied Parallel Programming, Artificial Intelligence, Programming Languages &amp; Compilers, System Programming, Topics in Software Engineering.</p>
         </div>
-        
+
         <div class="experience-item">
           <h4>Zhejiang University</h4>
           <p class="company">B.S. in Biological Engineering</p>
@@ -295,10 +222,10 @@
           <p><em>Relevant coursework:</em> Data Structures and Algorithms, Computer System Organization, Game Development, Statistics and Probability, Numerical Analysis.</p>
         </div>
       </section>
-      
+
       <section id="experience">
         <h2>Experience</h2>
-        
+
         <div class="experience-item">
           <h4>Software Engineer</h4>
           <p class="company">PayPal</p>
@@ -312,7 +239,7 @@
             <li>Integrated Azure AI to generate TestRail test cases from test code, reducing time spent creating test cases by 50%.</li>
           </ul>
         </div>
-        
+
         <div class="experience-item">
           <h4>Software Engineer Intern</h4>
           <p class="company">Venmo</p>
@@ -323,7 +250,7 @@
             <li>Deployed tests on AWS Device Farm to automate and record tests across various devices.</li>
           </ul>
         </div>
-        
+
         <div class="experience-item">
           <h4>iOS Software Engineer Intern</h4>
           <p class="company">NetEase</p>
@@ -334,64 +261,74 @@
           </ul>
         </div>
       </section>
-      
+
       <section id="artifact">
         <h2>Artifacts</h2>
-        
+
         <div class="artifact-section">
           <h3 class="artifact-title">📌 Artifact 1: Leadership Growth in AI/ML and Change Management</h3>
-          
+
           <h3>Introduction</h3>
-          <p>This artifact was developed from my Workshop One professional assessment work. It presents my reflection on two self-assessments focused on AI/ML leadership and change management. I selected it as my first portfolio artifact because it provides a strong starting point for showing who I am as a learner and emerging professional.</p>
-          
-          <h3>Artifact Description</h3>
+          <p>This artifact was developed from my Workshop One professional assessment work. It presents my analysis of two self-assessments focused on AI/ML leadership and change management. I selected it as my first portfolio artifact because it provides a strong starting point for showing who I am as a learner and emerging professional.</p>
+
+          <h3>Description</h3>
+          <p>This artifact is based on a structured review of my strengths and growth areas in leadership, adaptability, communication, and change readiness within AI/ML contexts. It highlights how self-assessment can support professional development and future improvement.</p>
+
           <div class="card">
             <h4>Objective</h4>
             <p>To evaluate my current strengths and growth areas related to AI/ML leadership and change management.</p>
           </div>
           <div class="card">
             <h4>Process</h4>
-            <p>I completed both self-assessments, reviewed my results, compared common themes across the tools, and wrote a reflection identifying strengths, growth areas, and possible revisions to the assessments.</p>
+            <p>I completed both self-assessments, reviewed my results, compared common themes across the tools, and organized the findings into a professional artifact that emphasizes leadership readiness, communication, and areas for continued development.</p>
           </div>
           <div class="card">
             <h4>Tools and Technologies Used</h4>
-            <p>Course-provided self-assessment forms, workshop readings, and written reflection.</p>
+            <p>Course-provided self-assessment forms, workshop readings, and analytical writing.</p>
           </div>
-          
-          <h3>Artifact-Specific Value Proposition</h3>
+
+          <h3>Value Proposition</h3>
           <ul>
-            <li><strong>Unique Value:</strong> This artifact shows self-awareness, communication strength, openness to innovation, and a willingness to improve through structured reflection.</li>
+            <li><strong>Unique Value:</strong> This artifact shows self-awareness, communication strength, openness to innovation, and a willingness to improve through structured analysis.</li>
             <li><strong>Relevance:</strong> It aligns with my broader value proposition by showing that I approach AI/ML not only as a technical field, but also as one that requires responsible leadership and thoughtful communication.</li>
           </ul>
-          
-          <h3>Customization for Audience</h3>
+        </div>
+
+        <div class="artifact-section">
+          <h3 class="artifact-title">📌 Artifact 2: Comparing Machine Learning and Deep Learning in Real-World Applications</h3>
+
+          <h3>Introduction</h3>
+          <p>This artifact was developed from my Week 2.3 assignment on machine learning and deep learning. I selected it as my second portfolio artifact because it demonstrates my ability to compare AI approaches, evaluate their suitability for different types of problems, and connect course concepts to practical real-world applications.</p>
+
+          <h3>Description</h3>
+          <p>This artifact examines the differences between traditional machine learning and deep learning by analyzing two example applications: customer churn prediction as a machine learning use case and image recognition as a deep learning use case. The work focuses on explaining why each method is appropriate for its problem context and why the alternative approach would be less suitable.</p>
+
+          <div class="card">
+            <h4>Objective</h4>
+            <p>To differentiate between machine learning and deep learning by applying both concepts to real-world scenarios and evaluating their strengths and limitations.</p>
+          </div>
+          <div class="card">
+            <h4>Process</h4>
+            <p>I reviewed the course lesson on machine learning and deep learning, selected one example from traditional machine learning and one example from deep learning, and researched realistic business and technology applications for each. I then analyzed why each approach fit its problem based on data type, complexity, feature extraction requirements, and computational demands.</p>
+          </div>
+          <div class="card">
+            <h4>Tools and Technologies Used</h4>
+            <p>Course lesson materials, online research sources, analytical writing, and comparative reasoning based on machine learning and deep learning concepts.</p>
+          </div>
+
+          <h3>Value Proposition</h3>
           <ul>
-            <li><strong>Adaptations Made:</strong> I organized the artifact around professional growth, leadership readiness, and audience relevance instead of presenting it only as a classroom exercise.</li>
-            <li><strong>Relevance:</strong> These choices make the artifact more meaningful to a professional reader who wants to understand my mindset, development, and potential.</li>
+            <li><strong>Unique Value:</strong> This artifact shows my ability to move beyond basic definitions and apply AI concepts in a practical, comparative way. It demonstrates analytical thinking, problem-solution matching, and an understanding of how different AI methods serve different business and technical needs.</li>
+            <li><strong>Relevance:</strong> This artifact supports my overall value proposition by showing that I approach AI/ML with both conceptual understanding and practical judgment. It reflects my ability to explain technical distinctions clearly and evaluate which tools are most appropriate in real-world settings.</li>
           </ul>
-          
-          <h3>Reflection</h3>
-          <div class="card">
-            <h4>Significance</h4>
-            <p>I chose this artifact because it demonstrates how I assess myself honestly and connect learning to future professional growth.</p>
-          </div>
-          <div class="card">
-            <h4>Lessons Learned</h4>
-            <p>I learned that <strong>communication and adaptability</strong> are clear strengths for me, but I also need stronger experience in areas such as risk management, scaling AI/ML initiatives, and applying formal leadership frameworks.</p>
-          </div>
-          
-          <h3>Feedback and Revisions</h3>
-          <div class="card">
-            <h4>Feedback</h4>
-            <p>After reviewing the rubric and professional portfolio template, I recognized that the artifact needed stronger audience focus, clearer value-proposition language, and a more professional structure.</p>
-          </div>
-          <div class="card">
-            <h4>Revisions</h4>
-            <p>I clarified the artifact title, expanded the explanation of audience and relevance, organized the content according to the required template sections, and strengthened the explanation of why this artifact belongs in a professional portfolio.</p>
-          </div>
+
+          <h3>Example Applications</h3>
+          <p>For the machine learning example, I selected <strong>customer churn prediction</strong>, where a company uses structured customer data such as contract length, monthly charges, and service history to predict whether a customer is likely to leave. This problem is well suited to traditional machine learning because the data is structured, the features can be clearly defined, and models such as logistic regression or support vector machines can produce effective results with relatively lower computational cost.</p>
+          <p>For the deep learning example, I selected <strong>image recognition</strong>, such as facial recognition or object detection in digital images. This problem is well suited to deep learning because image data is high-dimensional and complex, and deep neural networks such as convolutional neural networks can automatically learn useful visual features from raw pixel input.</p>
+          <p>Traditional machine learning would be less suitable for image recognition because it often depends on manual feature extraction, which is difficult and less effective for complex visual patterns. Deep learning would be less suitable for customer churn prediction in many practical cases because it typically requires more data, more computational power, and more complexity than necessary for structured business data.</p>
         </div>
       </section>
-      
+
       <section id="references">
         <h2>References</h2>
         <ul class="reference-list">
@@ -399,13 +336,14 @@
           <li>Indiana Wesleyan University. (2026). <em>Workshop One: Professional Portfolio - Artifact 1 assignment materials</em>.</li>
           <li>Indiana Wesleyan University. (2026). <em>AI/ML Integration Leadership Skills Self-Assessment Form</em>.</li>
           <li>Indiana Wesleyan University. (2026). <em>Change Management Skills Self-Assessment Form</em>.</li>
+          <li>Indiana Wesleyan University. (2026). <em>Machine Learning vs. Deep Learning assignment materials</em>.</li>
           <li>Center for Creative Leadership. (n.d.). <em>How to be a successful change leader</em>. <a href="https://www.ccl.org/articles/leading-effectively-articles/successful-change-leader/" target="_blank">Link</a></li>
           <li>Change Strategists. (n.d.). <em>How to assess change management skills</em>. <a href="https://changestrategists.com/how-to-assess-change-management-skills/" target="_blank">Link</a></li>
-          <li>Cleveland Clinic. (2022). <em>Neuroplasticity: What it is, purpose, examples & how to improve it</em>. <a href="https://my.clevelandclinic.org/health/articles/22857-neuroplasticity" target="_blank">Link</a></li>
+          <li>Cleveland Clinic. (2022). <em>Neuroplasticity: What it is, purpose, examples &amp; how to improve it</em>. <a href="https://my.clevelandclinic.org/health/articles/22857-neuroplasticity" target="_blank">Link</a></li>
         </ul>
       </section>
     </div>
-    
+
     <footer>
       <p>🔗 <a href="https://github.com/BlueSaNGG" target="_blank">GitHub</a></p>
     </footer>
