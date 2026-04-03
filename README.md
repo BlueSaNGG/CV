@@ -1,49 +1,64 @@
 # CV
 
-Personal site and portfolio for **Qi Jin (BlueSaNGG)**.
-
-## Main pages
-
-- `/` → landing page
-- `/interactive-resume.html` → preserved interactive resume style page
-- `/ml-portfolio.html` → professional portfolio page for coursework + experience
-- `/artifact-leadership-growth.html` → Artifact 1
-- `/artifact-ml-vs-deep-learning.html` → Artifact 2
-- `/training-methods-artifact.html` → Artifact 3
-- `/artifact-communication-clarity.html` → Artifact 4
+Portfolio repository for **https://bluesangg.github.io/CV/**.
 
 ## Purpose
 
-This repo now serves two roles:
+This repo is the **portfolio/detail layer** of the site.
+It should hold the pages that go deeper than the root landing page.
 
-1. **Professional landing + personal site**
-   - A clean homepage that routes visitors to the most useful destinations.
-2. **Course / portfolio publishing**
-   - Hosts the AI/ML portfolio pages and artifact subpages used for coursework and portfolio presentation.
+## What this repo is for
 
-## Current structure
+Use this repo for:
+- portfolio homepage
+- artifact pages
+- coursework portfolio content
+- resume-style portfolio pages
+- supporting pages tied to the portfolio
 
-### Landing page
-The root `index.html` is a lightweight landing page intended to be the best first impression for visitors.
+Do **not** treat this repo as the main root homepage for `https://bluesangg.github.io/`.
+That role belongs to the separate `BlueSaNGG.github.io` repo.
 
-### Interactive resume
-`interactive-resume.html` preserves the older visual style of the original personal homepage, while allowing the content to be modernized over time.
+## Main pages
 
-### Portfolio
-`ml-portfolio.html` is the newer professional portfolio page with:
-- updated bio
-- technical skills
-- experience highlights
-- artifact navigation improvements
-- four portfolio artifacts
+- `/CV/` → repo GitHub Pages root
+- `/CV/ml-portfolio.html` → professional portfolio page
+- `/CV/artifact-leadership-growth.html` → Artifact 1
+- `/CV/artifact-ml-vs-deep-learning.html` → Artifact 2
+- `/CV/training-methods-artifact.html` → Artifact 3
+- `/CV/artifact-communication-clarity.html` → Artifact 4
+
+## Relationship to other site repos
+
+This repo works together with:
+- `BlueSaNGG/BlueSaNGG.github.io` → publishes to `https://bluesangg.github.io/`
+
+Recommended division of responsibility:
+- `BlueSaNGG.github.io` = landing page / personal-site front door
+- `CV` = detailed portfolio and artifact hosting
+
+## Recommended long-term structure
+
+Keep only **two site repos** unless a future need is strong enough to justify a third:
+
+1. **BlueSaNGG.github.io**
+   - root landing page
+   - interactive resume
+   - lightweight personal-site navigation
+
+2. **CV**
+   - professional portfolio
+   - coursework portfolio
+   - artifact pages
+   - supporting detail pages
+
+This two-repo setup is enough right now and is not too messy as long as the division stays clear.
 
 ## Assets
 
-- `css/styles.css` → styles used by the interactive resume page
-- `images/` → images used by the interactive resume page
-- `favicon.ico` → site icon
+- `css/`, `images/`, `favicon.ico` → supporting assets for pages inside this repo
 
 ## Notes
 
-- This repo has been updated to support both a modern landing page and a preserved legacy-style subpage.
+- If a page is mainly a destination users reach *from* the homepage, it likely belongs here.
 - If GitHub Pages content looks stale, wait for deployment/cache refresh before assuming the push failed.
