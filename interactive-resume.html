@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qi Jin | Interactive Resume</title>
+    <!-- awesome font icon -->
+    <script
+      src="https://kit.fontawesome.com/bd9ef9d2b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bs -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- web icon -->
+    <link rel="icon" href="favicon.ico" />
+    <!-- embeded font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body
+    data-spy="scroll"
+    data-target="#nav_scroll"
+    data-offset="100"
+    class="scrollspy"
+  >
+    <!-- title section -->
+    <section class="title-section">
+      <div class="top-container container-fluid">
+        <div class="overlay"></div>
+        <a href="#profile" class="scroll-down">
+          <i class="fas fa-arrow-down fa-3x"></i>
+        </a>
+        <div class="title-container">
+          <h1 class="title-head">Qi Jin</h1>
+          <p class="title-subhead">Interactive resume | Software Engineer</p>
+        </div>
+              <div style="position:absolute; top:24px; right:24px; z-index:3;">
+          <a href="/" style="color:white; text-decoration:none; border:1px solid rgba(255,255,255,0.6); padding:10px 16px; border-radius:999px; font-weight:600;">Home</a>
+        </div>
+      </div>
+    </section>
+    <!-- navbar -->
+    <div id="nav_scroll" class="nav_scroll">
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#profile"><span>Profile</span> </a>
+        <a class="nav-link" href="#experience"><span>Experience</span></a>
+        <a class="nav-link" href="#abilities"><span>Abilities</span></a>
+        <a class="nav-link" href="#projects"><span>projects</span></a>
+        <a class="nav-link" href="#contact"><span>contact</span></a>
+        <a class="nav-link" href="/CV/ml-portfolio.html"><span>portfolio</span></a>
+      </nav>
+    </div>
+
+    <!-- profile section -->
+    <section id="profile" class="profile-section white-section">
+      <div class="profile container container-fluid">
+        <h2>Profile</h2>
+        <p class="profile-description">Software engineer focused on automation, developer tooling, and practical AI/ML growth</p>
+        <hr class="title-hr" />
+
+        <div class="profile-content">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="about-me">
+                <h3>About me</h3>
+                <p>
+                  I am a software engineer with experience building automation, release infrastructure, and developer tooling for mobile engineering teams. I care about reliability, clean systems, and measurable improvements. I also enjoy turning complex technical ideas into clear explanations and working with teams to improve how software is built and delivered.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 photo-section">
+              <div
+                id="carousel-photos"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/plane.png" class="slide-photo" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/mountain.png" class="slide-photo" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/onepunch.png" class="slide-photo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="details">
+                <h3>Details</h3>
+                <h4>Name:</h4>
+                <p>Qi Jin</p>
+                <h4>Role:</h4>
+                <p>Software Engineer</p>
+                <h4>Location:</h4>
+                <p>Chicago, Illinois, United States</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- experience section -->
+    <section id="experience" class="experience-section colored-section">
+      <div class="experience container-fluid">
+        <h2>Experiences</h2>
+        <p class="experience-description">“Stay hungry. Stay foolish.”</p>
+        <hr class="title-hr" />
+        <div class="educations">
+          <h3 class="experience-title">Educations</h3>
+          <div class="experiences">
+            <div class="experience-row row">
+              <div class="col-md-4">
+                <h4>University of Illinois Urbana-Champaign</h4>
+                <p class="experience-period">Jan 2021 - Dec 2022</p>
+              </div>
+              <div class="col-md-8">
+                <strong>M.S. in Biological and Computer Engineering</strong>
+                <p class="hidden-phone">
+                  Relevant coursework included database systems, parallel computer architecture, applied parallel programming, artificial intelligence, programming languages and compilers, and system programming. This experience strengthened both my software foundation and my interest in practical technical problem solving.
+                </p>
+                <span class="experience-details">
+                  <span class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Chicago, IL, US
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="experience-row row">
+              <div class="col-md-4">
+                <h4>Zhejiang University</h4>
+                <p class="experience-period">Sep 2016 - Jun 2020</p>
+              </div>
+              <div class="col-md-8">
+                <strong>B.S. in Biological Engineering</strong>
+                <p class="hidden-phone">
+                  My undergraduate studies built my foundation in data structures, algorithms, statistics, and computational thinking. During this period, I first became interested in software development and the broader possibilities of AI and machine learning.
+                </p>
+                <span class="experience-details">
+                  <span class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    San Jose, CA, US
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="title-hr" />
+        <div class="internships">
+          <h3 class="experience-title">Career</h3>
+          <div class="experiences">
+            <div class="experience-row row">
+              <div class="col-md-4">
+                <h4>PayPal</h4>
+                <p class="experience-period">Feb 2023 - Present</p>
+              </div>
+              <div class="col-md-8">
+                <strong>Software Engineer</strong>
+                <p class="hidden-phone">
+                  Designed and improved CI and release infrastructure for mobile engineering teams. Key work included a scheduler that reduced CI queue volume by 93% and cut average wait time by 99%, plus large-scale Jenkins-to-Harness migration work adopted across hundreds of mobile pipelines.
+                </p>
+                <span class="experience-details">
+                  <span class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Champaign, IL, US
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="experience-row row">
+              <div class="col-md-4">
+                <h4>Venmo</h4>
+                <p class="experience-period">May 2022 - Aug 2022</p>
+              </div>
+              <div class="col-md-8">
+                <strong>Software Engineer Intern</strong>
+                <p class="hidden-phone">
+                  Improved mobile CI pipelines, built end-to-end Android UI and API tests, and expanded automated coverage on AWS Device Farm. This work contributed to faster builds, better reliability, and broader device-level testing.
+                </p>
+                <span class="experience-details">
+                  <span class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Zhejiang, China
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="experience-row row">
+              <div class="col-md-4">
+                <h4>NetEase</h4>
+                <p class="experience-period">May 2021 - Aug 2021</p>
+              </div>
+              <div class="col-md-8">
+                <strong>iOS Software Engineer Intern</strong>
+                <p class="hidden-phone">
+                  Developed iOS features in Objective-C, improved maintainability by organizing code into MVC architecture, and contributed to a smoother user experience during internship work on consumer-facing products.
+                </p>
+                <span class="experience-details">
+                  <span class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Zhejiang, China
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- abilities section -->
+    <section id="abilities" class="abilites-section white-section">
+      <div class="abilities container-fluid">
+        <h2 class="section-title">Abilities</h2>
+        <p class="abilities-description">
+          “Once we accept our limits, we go beyond them.”
+        </p>
+        <hr class="title-hr" />
+        <div>
+          <div class="skills">
+            <h3>Skills</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="no-bullets">
+                  <li>
+                    <span class="ability-title">JSON</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ability-title">XML</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Bootstrap Framework</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ability-title">CSS(3)</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ability-title">HTML(5)</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ability-title">JQuery</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ability-title">Javascript</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Python</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="no-bullets">
+                  <li>
+                    <span class="ability-title">MongoDB</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="ability-title">SQL</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Neo4J</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ability-title">MVC Pattern</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ability-title">Objective-C</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="ability-title">Haskell</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="ability-title">CUDA</span>
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="ability-title"
+                      >Object Orientated Programming</span
+                    >
+                    <span class="ability-score">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="title-hr" />
+        <div class="languages">
+          <h3>languages</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="no-bullets">
+                <li>
+                  <span class="ability-title">Chinese (Mother tongue)</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="no-bullets">
+                <li>
+                  <span class="ability-title">English (Daily use)</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="title-hr" />
+        <div class="tools">
+          <h3>tools</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="no-bullets">
+                <li>
+                  <span class="ability-title">MS Office</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="ability-title">Mac</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="ability-title">Windows</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-title">Unreal Engine</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="no-bullets">
+                <li>
+                  <span class="ability-title">Internet Explore 10+</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </li>
+
+                <li>
+                  <span class="ability-title">Xcode</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </li>
+                <li>
+                  <span class="ability-title">Git / Git Flow</span>
+                  <span class="ability-score">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects section -->
+    <section id="projects" class="projects-section colored-section">
+      <div class="projects container-fluid">
+        <h2 class="section-title">Projects</h2>
+        <p class="project-description">
+          “I'd rather be optimistic and wrong than pessimistic and right.”
+        </p>
+        <hr class="title-hr" />
+        <div class="project-row">
+          <!--  -->
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <figure class="effect">
+                <img src="images/simon.png" alt="Simon" />
+
+                <figcaption>
+                  <h3>Simon</h3>
+                  <p>Classic browser game project showing front-end interaction and JavaScript fundamentals.</p>
+                  <p>
+                    <strong>Tags:</strong> <br />Development, Javascript, Game
+                  </p>
+                  <a
+                    href="https://bluesangg.github.io/game-simon/"
+                    target="_blank"
+                    >View more</a
+                  >
+                  <span class="icon">
+                    <i class="fas fa-link"></i>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <figure class="effect">
+                <img src="images/BlogPic.png" alt="SBlog" />
+
+                <figcaption>
+                  <h3>SBlog</h3>
+                  <p>Machine Learning portfolio with four curated artifacts and updated professional experience.</p>
+                  <p>
+                    <strong>Tags:</strong> <br />Design, Development, Backend
+                  </p>
+                  <a href="/CV/ml-portfolio.html" target="_blank"
+                    >View more</a
+                  >
+                  <span class="icon">
+                    <i class="fas fa-link"></i>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact sectoin -->
+    <section id="contact" class="contact-section">
+      <div class="bottom-container container-fluid">
+        <div class="contact-me">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="abilities-description">
+            “I'm just enthusiastic about what I do.”
+          </p>
+          <hr class="contact-hr" />
+          <div class="row contact-row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <a
+                class="btn btn-lg btn-outline-secondary"
+                href="mailto:bluesang217@gmail.com"
+                ><i class="fas fa-at contact-btn"></i>bluesang217@gmail.com</a
+              >
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <a
+                class="btn btn-lg btn-outline-secondary"
+                href="https://github.com/BlueSaNGG"
+                ><i class="fas fa-at github-btn"></i>Github:BlueSaNGG</a
+              >
+            </div>
+          </div>
+
+          <br />
+          <p class="copyright">@Blue Sang</p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
