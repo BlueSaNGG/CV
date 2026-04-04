@@ -61,9 +61,49 @@
     .footer-link {
       margin-top: 32px;
     }
-  </style>
+  
+    .site-nav-pill {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      z-index: 2000;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .site-nav-pill a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(26,26,46,0.88);
+      color: white;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    .site-nav-pill a:hover {
+      background: #e94560;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .site-nav-pill {
+        top: 12px;
+        right: 12px;
+        left: 12px;
+        justify-content: flex-end;
+      }
+      .site-nav-pill a {
+        font-size: 0.88rem;
+        padding: 9px 12px;
+      }
+    }
+</style>
 </head>
 <body>
+  <div class="site-nav-pill"><a href="https://bluesangg.github.io/">Home</a><a href="ml-portfolio.html">Portfolio</a></div>
+
   <div class="container">
     <h1>Machine Learning Training Methods Guide</h1>
     <p><strong>Artifact Type:</strong> Explanatory guide on model training concepts</p>
