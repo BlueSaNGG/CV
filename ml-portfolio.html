@@ -118,6 +118,8 @@ ul li::before { content: "4"; position: absolute; left: 0; color: var(--accent
   font-family: 'Fraunces', Georgia, serif; font-size: 1.25rem; font-weight: 600;
   text-transform: none; letter-spacing: 0; margin: 0 0 8px;
 }
+.experience-item h4 a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+.experience-item h4 a:hover { color: var(--accent-deep); }
 .experience-item .company {
   font-family: 'IBM Plex Mono', monospace; font-size: .78rem; font-weight: 600;
   letter-spacing: .14em; text-transform: uppercase; color: var(--accent-deep);
@@ -203,6 +205,7 @@ footer::after {
       <a href="#bio">Bio</a>
       <a href="#value">Value Proposition</a>
       <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
     </nav>
@@ -210,18 +213,14 @@ footer::after {
     <div class="content">
       <section id="bio">
         <h2>Professional Bio</h2>
-        <p>I am a <strong>software engineer</strong> specializing in release infrastructure, automation, and developer productivity for mobile engineering teams — the kind of work where a small pipeline improvement compounds across hundreds of engineers. At PayPal, that has meant substantially reducing CI queue depth and wait times, and saving dozens of CI hours every week. Alongside it, I'm building a second curve in AI/ML through university coursework, with an emphasis on the <strong>responsible use of machine learning</strong> and communicating it clearly.</p>
+        <p>I am a <strong>software engineer</strong> specializing in release infrastructure, automation, and developer productivity for mobile engineering teams — the kind of work where a small pipeline improvement compounds across hundreds of engineers. At PayPal, that has meant substantially reducing CI queue depth and wait times, and saving dozens of CI hours every week. Alongside it, I'm building a second curve in AI/ML through hands-on projects, with an emphasis on the <strong>responsible use of machine learning</strong> and communicating it clearly.</p>
       </section>
 
 <section id="value">
-        <h2>Value Proposition and Audience</h2>
+        <h2>Value Proposition</h2>
         <div class="card">
           <h4>Personal Value Proposition</h4>
           <p>I bring a <strong>systems-minded, measurement-driven</strong> approach to technical work: find the bottleneck, fix it, prove it with numbers. My core is release engineering and developer productivity — workflow automation, CI/CD, test infrastructure — and I'm extending that same rigor into AI/ML, with an emphasis on clear communication and responsible practice.</p>
-        </div>
-        <div class="card">
-          <h4>Target Audience</h4>
-          <p>Engineering leaders and teams who need <strong>release infrastructure that gets out of the way</strong> — and who value someone deliberately building AI/ML fluency on top of a solid platform-engineering foundation.</p>
         </div>
       </section>
 
@@ -262,6 +261,25 @@ footer::after {
             <li>Developed iOS product features in Objective-C for consumer applications.</li>
             <li>Refactored legacy code toward MVC, integrated third-party APIs, and added unit tests to improve maintainability.</li>
           </ul>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>Selected Work</h2>
+        <div class="experience-item">
+          <h4><a href="https://github.com/BlueSaNGG/openclaw-seven777" target="_blank" rel="noopener">openclaw-seven777</a></h4>
+          <p class="company">Shell · AI agent infrastructure · 2026</p>
+          <p>A self-hosted OpenClaw AI agent with its own workspace, memory, and scheduled heartbeat — my hands-on lab for understanding how agent infrastructure actually runs.</p>
+        </div>
+        <div class="experience-item">
+          <h4><a href="https://github.com/BlueSaNGG/RayTracing_CPU" target="_blank" rel="noopener">RayTracing_CPU</a></h4>
+          <p class="company">C++17 · Graphics · 2022</p>
+          <p>A CPU-based ray tracer written from scratch in C++17 — an exercise in performance-sensitive systems code.</p>
+        </div>
+        <div class="experience-item">
+          <h4><a href="https://github.com/BlueSaNGG/AI_trained_Flappy_Animal" target="_blank" rel="noopener">AI_trained_Flappy_Animal</a></h4>
+          <p class="company">Python · Machine learning toy · 2022</p>
+          <p>A Flappy-style game that learns to play itself — training loop, live visualization, and generation-based play, all in Python.</p>
         </div>
       </section>
 
